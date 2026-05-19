@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BookNest — Book Store</title>
+  <style>
+    *{margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif;}
+
+    body{
+      background:linear-gradient(135deg,#fdfbfb,#ebedee);
+      color:#222;
+      padding:20px;
+    }
+
+    /* Header */
+    header{
+      background:linear-gradient(90deg,#667eea,#764ba2);
+      padding:15px 25px;
+      border-radius:12px;
+      text-align:center;
+      box-shadow:0 6px 20px rgba(0,0,0,0.1);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+    header h1{
+      color:white;
+      font-size:28px;
+      font-weight:700;
+      letter-spacing:1px;
+    }
+
+    /* Container */
+    .container{
+      max-width:1100px;
+      margin:30px auto;
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    /* Card */
+    .card{
+      background:white;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      transition:transform .3s ease, box-shadow .3s ease;
+    }
+    .card:hover{
+      transform:translateY(-8px) scale(1.03);
+      box-shadow:0 12px 28px rgba(0,0,0,0.15);
+    }
+    .cover img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+    .info{
+      padding:15px;
+      text-align:center;
+    }
+    .title{
+      font-size:18px;
+      font-weight:600;
+      margin-bottom:5px;
+    }
+    .author{
+      font-size:14px;
+      color:#555;
+      margin-bottom:15px;
+    }
+    .btn{
+      display:inline-block;
+      background:linear-gradient(90deg,#667eea,#764ba2);
+      color:white;
+      padding:8px 14px;
+      border-radius:20px;
+      font-size:14px;
+      font-weight:600;
+      text-decoration:none;
+      transition:background .3s ease;
+    }
+    .btn:hover{
+      background:linear-gradient(90deg,#764ba2,#667eea);
+    }
+
+    /* Footer */
+    footer{
+      text-align:center;
+      margin-top:40px;
+      color:#444;
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 BookNest</h1>
+  </header>
+
+  <main class="container">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="cover">
+        <img src="https://images.unsplash.com/photo-1528209395271-b09d5f5c2d7e?auto=format&fit=crop&w=400&q=80" alt="Book Cover">
+      </div>
+      <div class="info">
+        <div class="title">A Day in Delhi</div>
+        <div class="author">by S. Gupta</div>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="cover">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80" alt="Book Cover">
+      </div>
+      <div class="info">
+        <div class="title">Intro to Machine Learning</div>
+        <div class="author">by R. Sharma</div>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="cover">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80" alt="Book Cover">
+      </div>
+      <div class="info">
+        <div class="title">Design Patterns</div>
+        <div class="author">by A. Kumar</div>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="cover">
+        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=400&q=80" alt="Book Cover">
+      </div>
+      <div class="info">
+        <div class="title">Physics Concepts</div>
+        <div class="author">by L. Verma</div>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 BookNest • All Rights Reserved
+  </footer>
+</body>
+</html>
